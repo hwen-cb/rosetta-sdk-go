@@ -159,7 +159,7 @@ func TestCallRetry(t *testing.T) {
 			)
 			assert.Equal(test.expectedResult, result)
 			assert.Equal(test.expectedIdempotency, idempotency)
-			assert.True(checkError(err, test.expectedError))
+			assert.True(checkError(err, test.expectedError)) 
 		})
 	}
 }
